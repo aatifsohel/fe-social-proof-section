@@ -11,6 +11,91 @@ html {
 }
 
 body {
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 100rem;
+}
+
+.section-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5.6rem;
+}
+
+.heading-primary {
+  color: hsl(300, 43%, 22%);
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.description {
+  color: hsl(303, 10%, 53%);
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.ratings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.rating-list-item {
+  background-color: hsl(300, 24%, 96%);
+  list-style: none;
+  padding: 1.6rem 3.6rem;
+  border-radius: 6px;
+  display: flex;
+  gap: 1.6rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star-icon {
+  width: 1.2rem;
+}
+
+.rated-in {
+  color: hsl(300, 43%, 22%);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.user-name {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.user-role {
+  color: hsl(333, 80%, 67%);
+}
+
+.user-review {
+  color: hsl(300, 24%, 96%);
 }
 
 .attribution {
