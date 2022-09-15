@@ -172,3 +172,63 @@ body {
 .attribution a {
   color: hsl(300, 43%, 22%);
 }
+
+@media (max-width: 768px) {
+  body {
+    background-image: url(images/bg-pattern-top-mobile.svg),
+      url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right -9vw top -5vh, 0vw 100vh;
+    min-width: 100vw;
+    padding: 5.6rem 0;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .section-hero {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .heading-primary {
+    padding: 0 3.6rem;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 0.8;
+  }
+
+  .description {
+    padding: 0;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .rating-list-item {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .rating-list-item:nth-child(n) {
+    margin: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.6rem;
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+  .card {
+    margin: 0;
+    transform: translate(0, 0);
+  }
+
+  .attribution {
+    position: static;
+    transform: translate(0, 0);
+  }
+}
